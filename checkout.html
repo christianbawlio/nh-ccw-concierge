@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - CCW Concierge | NH Concealed Carry Permit Application Assistance</title>
+  <meta name="description" content="Complete your purchase for NH concealed carry permit application concierge assistance.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            brand: { 50: '#f0f5ff', 100: '#e0eaff', 200: '#c2d5ff', 300: '#93b4fd', 400: '#6690f9', 500: '#4270f5', 600: '#2952e8', 700: '#1e3fd4', 800: '#1e35ac', 900: '#1e3088' },
+            navy: { 800: '#1b2a4a', 900: '#0f1b33' }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans min-h-screen flex flex-col">
+
+  <!-- Top Disclaimer Banner -->
+  <div class="bg-amber-50 border-b border-amber-200 text-amber-900 text-xs text-center py-2 px-4">
+    <strong>IMPORTANT:</strong> CCW Concierge is a private concierge service. We are <strong>NOT</strong> affiliated with any government agency.
+  </div>
+
+  <!-- Navigation -->
+  <nav class="bg-white border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2">
+        <div class="w-8 h-8 bg-brand-600 rounded-lg flex items-center justify-center">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        </div>
+        <span class="text-xl font-bold text-navy-900">CCW Concierge</span>
+      </a>
+      <div class="flex items-center gap-2 text-sm text-gray-500">
+        <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+        Secure Checkout
+      </div>
+    </div>
+  </nav>
+
+  <!-- Checkout Content -->
+  <main class="flex-1 py-8 md:py-12">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="grid md:grid-cols-5 gap-8">
+
+        <!-- Left: Order Form -->
+        <div class="md:col-span-3">
+          <h1 class="text-2xl font-bold mb-2">Complete Your Order</h1>
+          <p class="text-gray-500 mb-8">Secure your NH concealed carry permit application assistance.</p>
+
+          <form id="checkout-form" class="space-y-6">
+            <!-- Contact Information -->
+            <div class="bg-white rounded-xl border border-gray-200 p-6">
+              <h2 class="text-lg font-semibold mb-4">Contact Information</h2>
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-1">First Name</label>
+                  <input type="text" name="first_name" required class="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition">
+                </div>
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-1">Last Name</label>
+                  <input type="text" name="last_name" required class="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition">
+                </div>
+              </div>
+              <div class="mt-4">
+                <label class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                <input type="email" name="email" required class="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition">
+              </div>
+              <div class="mt-4">
+                <label class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                <input type="tel" name="phone" class="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition">
+              </div>
+            </div>
+
+            <!-- Upsell -->
+            <div class="bg-gradient-to-r from-brand-50 to-blue-50 rounded-xl border-2 border-brand-200 p-6 relative overflow-hidden">
+              <div class="absolute top-0 right-0 bg-brand-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">RECOMMENDED</div>
+              <div class="flex gap-4">
+                <div class="flex-shrink-0 pt-1">
+                  <input type="checkbox" id="upsell-training" name="upsell_training" class="w-5 h-5 text-brand-600 border-gray-300 rounded focus:ring-brand-500 cursor-pointer">
+                </div>
+                <div>
+                  <label for="upsell-training" class="cursor-pointer">
+                    <h3 class="font-bold text-lg mb-1">Add Defense Training Course</h3>
+                    <p class="text-gray-600 text-sm mb-3">Get access to our comprehensive defense training program including video lessons, legal carry law updates, situational awareness training, and expert tips.</p>
+                    <div class="flex items-baseline gap-2">
+                      <span class="text-2xl font-extrabold text-brand-600">$35</span>
+                      <span class="text-gray-500">/month</span>
+                    </div>
+                    <p class="text-xs text-gray-400 mt-1">Cancel anytime. First charge occurs at signup. Separate from concierge service fee.</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Payment -->
+            <div class="bg-white rounded-xl border border-gray-200 p-6">
+              <h2 class="text-lg font-semibold mb-4">Payment Information</h2>
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">Card Number</label>
+                <input type="text" name="card_number" placeholder="1234 5678 9012 3456" required class="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition">
+              </div>
+              <div class="grid grid-cols-2 gap-4 mt-4">
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-1">Expiration</label>
+                  <input type="text" name="card_exp" placeholder="MM / YY" required class="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition">
+                </div>
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-1">CVC</label>
+                  <input type="text" name="card_cvc" placeholder="123" required class="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition">
+                </div>
+              </div>
+            </div>
+
+            <!-- Agreement -->
+            <div class="bg-white rounded-xl border border-gray-200 p-6">
+              <div class="flex gap-3">
+                <input type="checkbox" id="agree-terms" name="agree_terms" required class="w-5 h-5 text-brand-600 border-gray-300 rounded focus:ring-brand-500 cursor-pointer mt-0.5">
+                <label for="agree-terms" class="text-sm text-gray-600 cursor-pointer">
+                  I understand that CCW Concierge is a <strong>private concierge service</strong> and is <strong>not a government agency</strong>. I acknowledge that the service fee is for application assistance only and does not include government fees. I have read and agree to the <a href="/terms.html" class="text-brand-600 underline hover:text-brand-700">Terms of Service</a>, <a href="/privacy.html" class="text-brand-600 underline hover:text-brand-700">Privacy Policy</a>, <a href="/disclaimer.html" class="text-brand-600 underline hover:text-brand-700">Disclaimer</a>, and <a href="/refund-policy.html" class="text-brand-600 underline hover:text-brand-700">Refund Policy</a>.
+                </label>
+              </div>
+            </div>
+
+            <!-- Submit -->
+            <button type="submit" class="w-full bg-brand-600 text-white px-6 py-4 rounded-xl text-lg font-semibold hover:bg-brand-700 transition shadow-lg shadow-brand-600/25 flex items-center justify-center gap-2">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+              Complete Purchase
+            </button>
+          </form>
+        </div>
+
+        <!-- Right: Order Summary -->
+        <div class="md:col-span-2">
+          <div class="bg-white rounded-xl border border-gray-200 p-6 sticky top-24">
+            <h2 class="text-lg font-semibold mb-4">Order Summary</h2>
+
+            <div class="space-y-4 mb-6">
+              <div class="flex justify-between items-start">
+                <div>
+                  <p class="font-medium">Application Concierge Service</p>
+                  <p class="text-sm text-gray-500">One-time fee</p>
+                </div>
+                <p class="font-semibold">$95.00</p>
+              </div>
+
+              <div id="upsell-line-item" class="hidden flex justify-between items-start">
+                <div>
+                  <p class="font-medium">Defense Training Course</p>
+                  <p class="text-sm text-gray-500">Monthly subscription</p>
+                </div>
+                <p class="font-semibold">$35.00/mo</p>
+              </div>
+            </div>
+
+            <div class="border-t border-gray-100 pt-4 space-y-2">
+              <div class="flex justify-between">
+                <span class="text-gray-500">Subtotal</span>
+                <span class="font-medium" id="subtotal">$95.00</span>
+              </div>
+              <div id="monthly-note" class="hidden">
+                <div class="flex justify-between text-sm">
+                  <span class="text-gray-500">+ Monthly subscription</span>
+                  <span class="text-gray-500">$35.00/mo</span>
+                </div>
+              </div>
+              <div class="flex justify-between text-lg font-bold border-t border-gray-100 pt-2">
+                <span>Due Today</span>
+                <span id="total">$95.00</span>
+              </div>
+            </div>
+
+            <!-- Security badges -->
+            <div class="mt-6 pt-6 border-t border-gray-100">
+              <div class="flex items-center gap-2 text-xs text-gray-400 mb-3">
+                <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                256-bit SSL Encrypted
+              </div>
+              <div class="flex items-center gap-2 text-xs text-gray-400">
+                <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                Secure Payment Processing
+              </div>
+            </div>
+
+            <!-- Disclaimer in summary -->
+            <div class="mt-6 pt-4 border-t border-gray-100">
+              <p class="text-xs text-gray-400 leading-relaxed">
+                CCW Concierge is a private concierge service. We are not a government agency. Our fee is for application assistance only. Government fees are paid separately to the issuing authority. We do not guarantee approval of any application.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-gray-200 py-6 mt-auto">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="flex flex-wrap justify-center gap-4 text-xs text-gray-400 mb-4">
+        <a href="/terms.html" class="hover:text-gray-600 transition">Terms of Service</a>
+        <span>&middot;</span>
+        <a href="/privacy.html" class="hover:text-gray-600 transition">Privacy Policy</a>
+        <span>&middot;</span>
+        <a href="/disclaimer.html" class="hover:text-gray-600 transition">Disclaimer</a>
+        <span>&middot;</span>
+        <a href="/refund-policy.html" class="hover:text-gray-600 transition">Refund Policy</a>
+      </div>
+      <p class="text-center text-xs text-gray-400">&copy; <span id="year"></span> CCW Concierge. Private concierge service. Not a government agency.</p>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+  <script>
+    // Upsell toggle
+    const upsellCheckbox = document.getElementById('upsell-training');
+    const upsellLineItem = document.getElementById('upsell-line-item');
+    const monthlyNote = document.getElementById('monthly-note');
+    const subtotal = document.getElementById('subtotal');
+    const total = document.getElementById('total');
+
+    upsellCheckbox.addEventListener('change', function() {
+      if (this.checked) {
+        upsellLineItem.classList.remove('hidden');
+        upsellLineItem.classList.add('flex');
+        monthlyNote.classList.remove('hidden');
+        subtotal.textContent = '$130.00';
+        total.textContent = '$130.00';
+      } else {
+        upsellLineItem.classList.add('hidden');
+        upsellLineItem.classList.remove('flex');
+        monthlyNote.classList.add('hidden');
+        subtotal.textContent = '$95.00';
+        total.textContent = '$95.00';
+      }
+    });
+
+    // Form submission placeholder
+    document.getElementById('checkout-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Payment processing will be integrated here. Connect your payment processor (Stripe, etc.) to complete this functionality.');
+    });
+  </script>
+</body>
+</html>

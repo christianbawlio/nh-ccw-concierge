@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CCW Concierge - New Hampshire Concealed Carry Permit Application Assistance</title>
+  <meta name="description" content="Professional concierge service to help you complete your New Hampshire concealed carry permit application correctly and efficiently. We are NOT a government agency.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            brand: { 50: '#f0f5ff', 100: '#e0eaff', 200: '#c2d5ff', 300: '#93b4fd', 400: '#6690f9', 500: '#4270f5', 600: '#2952e8', 700: '#1e3fd4', 800: '#1e35ac', 900: '#1e3088' },
+            navy: { 800: '#1b2a4a', 900: '#0f1b33' }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+  <!-- Top Disclaimer Banner -->
+  <div class="bg-amber-50 border-b border-amber-200 text-amber-900 text-xs text-center py-2 px-4">
+    <strong>IMPORTANT:</strong> CCW Concierge is a private concierge service. We are <strong>NOT</strong> affiliated with, endorsed by, or part of any federal, state, or local government agency.
+  </div>
+
+  <!-- Navigation -->
+  <nav class="bg-white border-b border-gray-100 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2">
+        <div class="w-8 h-8 bg-brand-600 rounded-lg flex items-center justify-center">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        </div>
+        <span class="text-xl font-bold text-navy-900">CCW Concierge</span>
+      </a>
+      <div class="hidden md:flex items-center gap-6 text-sm font-medium text-gray-600">
+        <a href="#how-it-works" class="hover:text-brand-600 transition">How It Works</a>
+        <a href="#pricing" class="hover:text-brand-600 transition">Pricing</a>
+        <a href="#faq" class="hover:text-brand-600 transition">FAQ</a>
+        <a href="/checkout.html" class="bg-brand-600 text-white px-5 py-2.5 rounded-lg hover:bg-brand-700 transition">Get Started</a>
+      </div>
+      <button id="mobile-menu-btn" class="md:hidden p-2">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 bg-white px-4 py-4 space-y-3">
+      <a href="#how-it-works" class="block text-gray-600 hover:text-brand-600">How It Works</a>
+      <a href="#pricing" class="block text-gray-600 hover:text-brand-600">Pricing</a>
+      <a href="#faq" class="block text-gray-600 hover:text-brand-600">FAQ</a>
+      <a href="/checkout.html" class="block bg-brand-600 text-white text-center px-5 py-2.5 rounded-lg hover:bg-brand-700">Get Started</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-navy-900 via-navy-800 to-brand-900 text-white py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur rounded-full px-4 py-1.5 text-sm mb-6">
+          <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+          New Hampshire Residents
+        </div>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+          Get Your NH Concealed Carry Permit — <span class="text-brand-300">Without the Hassle</span>
+        </h1>
+        <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl">
+          Our concierge service guides you through every step of the New Hampshire pistol/revolver license application. We help you fill out the forms correctly so nothing gets rejected or delayed.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="/checkout.html" class="inline-flex items-center justify-center gap-2 bg-brand-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-brand-500 transition shadow-lg shadow-brand-600/25">
+            Start Your Application
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+          <a href="#how-it-works" class="inline-flex items-center justify-center gap-2 border border-white/20 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white/10 transition">
+            Learn More
+          </a>
+        </div>
+        <p class="mt-6 text-sm text-gray-400">
+          Only <strong class="text-white">$95</strong> &middot; Application assistance completed in minutes
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Banner -->
+  <section class="bg-gray-50 border-b border-gray-100 py-6">
+    <div class="max-w-6xl mx-auto px-4 flex flex-wrap justify-center gap-8 md:gap-16 text-center text-sm text-gray-500">
+      <div class="flex items-center gap-2">
+        <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        <span>Step-by-Step Guidance</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+        <span>Secure & Confidential</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        <span>Fast & Easy Process</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+        <span>Expert Support</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Disclaimer Callout -->
+  <section class="py-6 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="bg-blue-50 border border-blue-200 rounded-xl p-5 text-sm text-blue-900">
+        <div class="flex gap-3">
+          <svg class="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          <div>
+            <p class="font-semibold mb-1">Private Concierge Service Disclosure</p>
+            <p>CCW Concierge is a <strong>private third-party concierge service</strong> that assists individuals in completing their New Hampshire pistol/revolver license application forms. We are <strong>not a government agency</strong>, law enforcement entity, or legal advisor. Our fee of $95 is for our concierge assistance services only and does <strong>not</strong> include any government filing fees, background check fees, or other fees that may be required by the State of New Hampshire. We do not guarantee approval of any application. Approval or denial of your application is solely at the discretion of the issuing authority.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section id="how-it-works" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">How It Works</h2>
+        <p class="text-gray-500 text-lg max-w-2xl mx-auto">Our streamlined process takes the confusion out of your NH concealed carry permit application.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Step 1 -->
+        <div class="relative bg-gray-50 rounded-2xl p-8 border border-gray-100">
+          <div class="w-12 h-12 bg-brand-100 text-brand-700 rounded-xl flex items-center justify-center font-bold text-lg mb-5">1</div>
+          <h3 class="text-xl font-semibold mb-3">Provide Your Information</h3>
+          <p class="text-gray-500">Enter your details through our secure online form. We'll collect only the information required for your NH pistol/revolver license application.</p>
+        </div>
+        <!-- Step 2 -->
+        <div class="relative bg-gray-50 rounded-2xl p-8 border border-gray-100">
+          <div class="w-12 h-12 bg-brand-100 text-brand-700 rounded-xl flex items-center justify-center font-bold text-lg mb-5">2</div>
+          <h3 class="text-xl font-semibold mb-3">We Prepare Your Forms</h3>
+          <p class="text-gray-500">Our team reviews and prepares your application, ensuring every field is filled out correctly and completely to avoid delays or rejections.</p>
+        </div>
+        <!-- Step 3 -->
+        <div class="relative bg-gray-50 rounded-2xl p-8 border border-gray-100">
+          <div class="w-12 h-12 bg-brand-100 text-brand-700 rounded-xl flex items-center justify-center font-bold text-lg mb-5">3</div>
+          <h3 class="text-xl font-semibold mb-3">Submit to Your Town/City</h3>
+          <p class="text-gray-500">You receive your completed application ready to submit to your local town or city clerk's office, along with clear instructions on next steps.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Use a Concierge Service -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">Why Use CCW Concierge?</h2>
+          <p class="text-gray-500 text-lg mb-8">While New Hampshire is a constitutional carry state, many residents still want their pistol/revolver license for reciprocity with other states. Our service makes the application process simple.</p>
+          <ul class="space-y-4">
+            <li class="flex gap-3">
+              <svg class="w-6 h-6 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <div>
+                <span class="font-semibold">Avoid Mistakes</span>
+                <p class="text-gray-500 text-sm">Incorrectly filled forms are the #1 reason for application delays. We ensure accuracy.</p>
+              </div>
+            </li>
+            <li class="flex gap-3">
+              <svg class="w-6 h-6 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <div>
+                <span class="font-semibold">Save Time</span>
+                <p class="text-gray-500 text-sm">No need to research forms, requirements, or instructions. We handle it all for you.</p>
+              </div>
+            </li>
+            <li class="flex gap-3">
+              <svg class="w-6 h-6 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <div>
+                <span class="font-semibold">Reciprocity Benefits</span>
+                <p class="text-gray-500 text-sm">Your NH license is recognized in 29+ states. Carry legally when you travel.</p>
+              </div>
+            </li>
+            <li class="flex gap-3">
+              <svg class="w-6 h-6 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <div>
+                <span class="font-semibold">Expert Guidance</span>
+                <p class="text-gray-500 text-sm">Our team knows the NH application process inside and out. Get it right the first time.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-2xl border border-gray-200 p-8 shadow-sm">
+          <div class="text-center">
+            <div class="text-5xl font-extrabold text-brand-600 mb-2">29+</div>
+            <p class="text-gray-500 mb-6">States honor the NH concealed carry license</p>
+            <div class="border-t border-gray-100 pt-6">
+              <p class="text-sm text-gray-400 mb-4">Your NH license provides reciprocity for concealed carry in states across the country.</p>
+              <a href="/checkout.html" class="inline-flex items-center gap-2 text-brand-600 font-semibold hover:text-brand-700 transition">
+                Get started now
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Simple, Transparent Pricing</h2>
+        <p class="text-gray-500 text-lg max-w-2xl mx-auto">One flat fee for our concierge application assistance. No hidden charges.</p>
+      </div>
+      <div class="max-w-lg mx-auto">
+        <div class="bg-white rounded-2xl border-2 border-brand-600 shadow-xl overflow-hidden">
+          <div class="bg-brand-600 text-white text-center py-2 text-sm font-semibold">Most Popular</div>
+          <div class="p-8">
+            <h3 class="text-2xl font-bold mb-2">Application Concierge Service</h3>
+            <p class="text-gray-500 mb-6">Complete assistance with your NH concealed carry permit application.</p>
+            <div class="flex items-baseline gap-2 mb-6">
+              <span class="text-5xl font-extrabold">$95</span>
+              <span class="text-gray-400">one-time</span>
+            </div>
+            <ul class="space-y-3 mb-8">
+              <li class="flex gap-2 text-sm">
+                <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Guided online form completion
+              </li>
+              <li class="flex gap-2 text-sm">
+                <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Application review & error checking
+              </li>
+              <li class="flex gap-2 text-sm">
+                <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Completed forms ready to submit
+              </li>
+              <li class="flex gap-2 text-sm">
+                <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Step-by-step submission instructions
+              </li>
+              <li class="flex gap-2 text-sm">
+                <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Email support throughout the process
+              </li>
+            </ul>
+            <a href="/checkout.html" class="block text-center bg-brand-600 text-white px-6 py-4 rounded-xl text-lg font-semibold hover:bg-brand-700 transition w-full">
+              Get Started Now
+            </a>
+            <p class="text-xs text-gray-400 text-center mt-4">Our fee is for concierge services only. Government fees are separate and paid directly to the issuing authority.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-20 bg-gray-50">
+    <div class="max-w-3xl mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
+      </div>
+      <div class="space-y-4">
+        <div class="bg-white rounded-xl border border-gray-200 overflow-hidden faq-item">
+          <button class="w-full text-left px-6 py-5 flex justify-between items-center font-semibold faq-toggle">
+            Are you a government agency?
+            <svg class="w-5 h-5 text-gray-400 faq-icon transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="px-6 pb-5 text-gray-500 hidden faq-content">
+            <p><strong>No.</strong> CCW Concierge is a private concierge service company. We are not affiliated with, endorsed by, or part of any federal, state, county, or municipal government agency. We are not law enforcement. We provide application assistance services to help individuals complete their NH pistol/revolver license application forms correctly.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl border border-gray-200 overflow-hidden faq-item">
+          <button class="w-full text-left px-6 py-5 flex justify-between items-center font-semibold faq-toggle">
+            Does my $95 fee include the government application fee?
+            <svg class="w-5 h-5 text-gray-400 faq-icon transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="px-6 pb-5 text-gray-500 hidden faq-content">
+            <p>No. The $95 fee is exclusively for our concierge application assistance service. Any government filing fees, background check fees, or other fees required by the State of New Hampshire or your local municipality are separate and must be paid directly to the appropriate government office.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl border border-gray-200 overflow-hidden faq-item">
+          <button class="w-full text-left px-6 py-5 flex justify-between items-center font-semibold faq-toggle">
+            Do you guarantee my application will be approved?
+            <svg class="w-5 h-5 text-gray-400 faq-icon transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="px-6 pb-5 text-gray-500 hidden faq-content">
+            <p><strong>No.</strong> We do not and cannot guarantee approval of any concealed carry permit application. The decision to approve or deny an application rests solely with the issuing authority (your local selectmen, mayor, or the NH Division of State Police for non-residents). Our service helps ensure your application is complete and accurate to give you the best chance of a smooth process.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl border border-gray-200 overflow-hidden faq-item">
+          <button class="w-full text-left px-6 py-5 flex justify-between items-center font-semibold faq-toggle">
+            Do I even need a permit in New Hampshire?
+            <svg class="w-5 h-5 text-gray-400 faq-icon transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="px-6 pb-5 text-gray-500 hidden faq-content">
+            <p>New Hampshire is a constitutional carry state, meaning you do not need a permit to carry a concealed firearm within the state (as of 2017). However, many residents choose to obtain their pistol/revolver license because it provides <strong>reciprocity in 29+ other states</strong>, allowing you to legally carry concealed when traveling. A NH license is also useful as an additional form of identification when purchasing firearms.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl border border-gray-200 overflow-hidden faq-item">
+          <button class="w-full text-left px-6 py-5 flex justify-between items-center font-semibold faq-toggle">
+            What information will I need to provide?
+            <svg class="w-5 h-5 text-gray-400 faq-icon transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="px-6 pb-5 text-gray-500 hidden faq-content">
+            <p>You will need to provide standard personal information as required by the NH application form, including your full legal name, date of birth, address, and other identifying details. We will guide you through each field and explain what is needed. All information is handled securely and confidentially.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl border border-gray-200 overflow-hidden faq-item">
+          <button class="w-full text-left px-6 py-5 flex justify-between items-center font-semibold faq-toggle">
+            What is the defense training course add-on?
+            <svg class="w-5 h-5 text-gray-400 faq-icon transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="px-6 pb-5 text-gray-500 hidden faq-content">
+            <p>For an additional $35/month, you can subscribe to our ongoing defense training course. This includes access to educational videos, legal updates on carry laws, situational awareness training, and more. This subscription is entirely optional and can be cancelled at any time. It is a separate service from the application concierge assistance.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-gradient-to-br from-navy-900 via-navy-800 to-brand-900 text-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Get Your NH Concealed Carry License?</h2>
+      <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">Let our concierge team handle the paperwork. Fill out our simple online form and we'll prepare your completed application.</p>
+      <a href="/checkout.html" class="inline-flex items-center gap-2 bg-brand-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-brand-500 transition shadow-lg shadow-brand-600/25">
+        Start Your Application &mdash; $95
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+      <p class="text-sm text-gray-400 mt-4">Private concierge service. Not a government agency.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <div class="w-7 h-7 bg-brand-600 rounded-lg flex items-center justify-center">
+              <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <span class="text-white font-bold">CCW Concierge</span>
+          </div>
+          <p class="text-sm">Private concierge service for NH concealed carry permit applications. Not a government agency.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Service</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#how-it-works" class="hover:text-white transition">How It Works</a></li>
+            <li><a href="#pricing" class="hover:text-white transition">Pricing</a></li>
+            <li><a href="#faq" class="hover:text-white transition">FAQ</a></li>
+            <li><a href="/checkout.html" class="hover:text-white transition">Get Started</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Legal</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/terms.html" class="hover:text-white transition">Terms of Service</a></li>
+            <li><a href="/privacy.html" class="hover:text-white transition">Privacy Policy</a></li>
+            <li><a href="/disclaimer.html" class="hover:text-white transition">Disclaimer</a></li>
+            <li><a href="/refund-policy.html" class="hover:text-white transition">Refund Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Contact</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="mailto:support@ccwconcierge.com" class="hover:text-white transition">support@ccwconcierge.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-8">
+        <div class="bg-gray-800/50 rounded-lg p-4 mb-6 text-xs">
+          <p class="font-semibold text-gray-300 mb-1">Legal Disclosure</p>
+          <p>CCW Concierge is a private concierge service and is NOT a government agency. We are not affiliated with, endorsed by, or connected to any federal, state, or local government entity, including but not limited to the New Hampshire Department of Safety, the New Hampshire State Police, or any municipal government. Our services consist of assisting individuals in completing application forms. We do not guarantee approval of any application. All government fees are separate from our service fee and must be paid directly to the appropriate government authority. This website does not provide legal advice.</p>
+        </div>
+        <p class="text-center text-xs">&copy; <span id="year"></span> CCW Concierge. All rights reserved. This is a private service, not a government website.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

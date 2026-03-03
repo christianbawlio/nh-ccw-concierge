@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Refund Policy - CCW Concierge</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            brand: { 600: '#2952e8', 700: '#1e3fd4' },
+            navy: { 800: '#1b2a4a', 900: '#0f1b33' }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+  <div class="bg-amber-50 border-b border-amber-200 text-amber-900 text-xs text-center py-2 px-4">
+    <strong>IMPORTANT:</strong> CCW Concierge is a private concierge service. We are <strong>NOT</strong> affiliated with any government agency.
+  </div>
+
+  <nav class="bg-white border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-4 py-4">
+      <a href="/" class="flex items-center gap-2 w-fit">
+        <div class="w-8 h-8 bg-brand-600 rounded-lg flex items-center justify-center">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        </div>
+        <span class="text-xl font-bold text-navy-900">CCW Concierge</span>
+      </a>
+    </div>
+  </nav>
+
+  <main class="max-w-3xl mx-auto px-4 py-12">
+    <h1 class="text-3xl font-bold mb-2">Refund Policy</h1>
+    <p class="text-gray-500 mb-8">Last updated: March 3, 2026</p>
+
+    <div class="prose prose-gray max-w-none space-y-6 text-gray-700 leading-relaxed">
+
+      <h2 class="text-xl font-semibold text-gray-900">Application Concierge Service ($95)</h2>
+      <p>Because our concierge service involves the immediate preparation and processing of your application forms, refunds are handled as follows:</p>
+      <ul class="list-disc pl-6 space-y-2">
+        <li><strong>Before form preparation begins:</strong> If you request a refund before we begin working on your application forms, you are entitled to a full refund of $95.</li>
+        <li><strong>After form preparation has begun:</strong> Once we have begun preparing your application forms, no refund will be issued, as the service has been substantially performed.</li>
+        <li><strong>Application denial:</strong> We do not provide refunds if your concealed carry permit application is denied by the issuing authority. Our service fee covers the application assistance service, not the outcome of your application.</li>
+      </ul>
+
+      <h2 class="text-xl font-semibold text-gray-900">Defense Training Course Subscription ($35/month)</h2>
+      <ul class="list-disc pl-6 space-y-2">
+        <li><strong>Cancellation:</strong> You may cancel your subscription at any time. Cancellation will take effect at the end of your current billing period. You will continue to have access to the training materials until your current billing period expires.</li>
+        <li><strong>Refunds:</strong> Monthly subscription payments are non-refundable once the billing period has begun. If you cancel, you will not be charged for subsequent months.</li>
+        <li><strong>Free trial:</strong> If a free trial period is offered, you must cancel before the trial ends to avoid being charged.</li>
+      </ul>
+
+      <h2 class="text-xl font-semibold text-gray-900">How to Request a Refund</h2>
+      <p>To request a refund, please contact us at <a href="mailto:support@ccwconcierge.com" class="text-brand-600 hover:text-brand-700">support@ccwconcierge.com</a> with the following information:</p>
+      <ul class="list-disc pl-6 space-y-1">
+        <li>Your full name</li>
+        <li>Email address used for the order</li>
+        <li>Order date</li>
+        <li>Reason for refund request</li>
+      </ul>
+      <p>Refund requests are processed within 5-7 business days. Approved refunds will be credited back to the original payment method.</p>
+
+      <h2 class="text-xl font-semibold text-gray-900">Chargebacks</h2>
+      <p>We encourage you to contact us directly before initiating a chargeback with your bank or credit card company. We are committed to resolving any issues promptly and fairly.</p>
+
+      <h2 class="text-xl font-semibold text-gray-900">Contact</h2>
+      <p>Questions about this Refund Policy may be directed to <a href="mailto:support@ccwconcierge.com" class="text-brand-600 hover:text-brand-700">support@ccwconcierge.com</a>.</p>
+    </div>
+  </main>
+
+  <footer class="bg-gray-50 border-t border-gray-200 py-6">
+    <div class="max-w-4xl mx-auto px-4 flex flex-wrap justify-center gap-4 text-xs text-gray-400">
+      <a href="/terms.html" class="hover:text-gray-600">Terms of Service</a>
+      <span>&middot;</span>
+      <a href="/privacy.html" class="hover:text-gray-600">Privacy Policy</a>
+      <span>&middot;</span>
+      <a href="/disclaimer.html" class="hover:text-gray-600">Disclaimer</a>
+      <span>&middot;</span>
+      <a href="/refund-policy.html" class="hover:text-gray-600">Refund Policy</a>
+    </div>
+    <p class="text-center text-xs text-gray-400 mt-4">&copy; <span id="year"></span> CCW Concierge. Private concierge service. Not a government agency.</p>
+  </footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>
