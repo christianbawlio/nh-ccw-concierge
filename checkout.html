@@ -80,9 +80,9 @@
               </div>
             </div>
 
-            <!-- Upsell -->
+            <!-- Upsell - ROSCA Compliant -->
             <div class="bg-gradient-to-r from-brand-50 to-blue-50 rounded-xl border-2 border-brand-200 p-6 relative overflow-hidden">
-              <div class="absolute top-0 right-0 bg-brand-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">RECOMMENDED</div>
+              <div class="absolute top-0 right-0 bg-brand-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">OPTIONAL ADD-ON</div>
               <div class="flex gap-4">
                 <div class="flex-shrink-0 pt-1">
                   <input type="checkbox" id="upsell-training" name="upsell_training" class="w-5 h-5 text-brand-600 border-gray-300 rounded focus:ring-brand-500 cursor-pointer">
@@ -92,12 +92,32 @@
                     <h3 class="font-bold text-lg mb-1">Add Defense Training Course</h3>
                     <p class="text-gray-600 text-sm mb-3">Get access to our comprehensive defense training program including video lessons, legal carry law updates, situational awareness training, and expert tips.</p>
                     <div class="flex items-baseline gap-2">
-                      <span class="text-2xl font-extrabold text-brand-600">$35</span>
-                      <span class="text-gray-500">/month</span>
+                      <span class="text-2xl font-extrabold text-brand-600">$35.00</span>
+                      <span class="text-gray-500">per month</span>
                     </div>
-                    <p class="text-xs text-gray-400 mt-1">Cancel anytime. First charge occurs at signup. Separate from concierge service fee.</p>
                   </label>
+                  <!-- ROSCA Required: Clear and conspicuous disclosure of material terms -->
+                  <div class="mt-3 bg-white rounded-lg border border-brand-200 p-3 text-xs text-gray-600 leading-relaxed">
+                    <p class="font-semibold text-gray-800 mb-1">Subscription Terms:</p>
+                    <ul class="list-disc pl-4 space-y-1">
+                      <li><strong>Recurring charge:</strong> You will be charged <strong>$35.00 per month</strong>, billed automatically to the payment method you provide.</li>
+                      <li><strong>First charge:</strong> Your first payment of $35.00 will be charged today along with the $95.00 concierge service fee.</li>
+                      <li><strong>Auto-renewal:</strong> This subscription <strong>automatically renews each month</strong> until you cancel. Each renewal will charge $35.00 to your payment method on file.</li>
+                      <li><strong>How to cancel:</strong> You may cancel at any time by emailing <a href="mailto:support@ccwconcierge.com" class="text-brand-600 underline">support@ccwconcierge.com</a> or by clicking the unsubscribe link in any subscription email. Cancellation takes effect at the end of your current billing period.</li>
+                      <li><strong>No obligation:</strong> This subscription is entirely optional and is not required to use the concierge application service.</li>
+                    </ul>
+                  </div>
                 </div>
+              </div>
+            </div>
+
+            <!-- ROSCA Required: Separate express consent for subscription -->
+            <div id="subscription-consent" class="hidden bg-white rounded-xl border-2 border-amber-300 p-6">
+              <div class="flex gap-3">
+                <input type="checkbox" id="agree-subscription" name="agree_subscription" class="w-5 h-5 text-brand-600 border-gray-300 rounded focus:ring-brand-500 cursor-pointer mt-0.5">
+                <label for="agree-subscription" class="text-sm text-gray-700 cursor-pointer">
+                  <strong>I authorize the recurring subscription charge.</strong> I understand that by checking this box, I am enrolling in the Defense Training Course subscription at <strong>$35.00 per month</strong>, which will be billed automatically each month until I cancel. I may cancel at any time by emailing support@ccwconcierge.com. This is a separate, optional service from the one-time concierge application fee.
+                </label>
               </div>
             </div>
 
@@ -190,10 +210,18 @@
               </div>
             </div>
 
+            <!-- Subscription disclosure in summary (ROSCA) -->
+            <div id="summary-subscription-terms" class="hidden mt-6 pt-4 border-t border-gray-100">
+              <p class="text-xs font-semibold text-amber-700 mb-1">Subscription Notice:</p>
+              <p class="text-xs text-amber-700 leading-relaxed">
+                The Defense Training Course is a <strong>recurring monthly subscription at $35.00/month</strong>. It will auto-renew each month until cancelled. Cancel anytime by emailing support@ccwconcierge.com.
+              </p>
+            </div>
+
             <!-- Disclaimer in summary -->
             <div class="mt-6 pt-4 border-t border-gray-100">
               <p class="text-xs text-gray-400 leading-relaxed">
-                CCW Concierge is a private concierge service. We are not a government agency. Our fee is for application assistance only. Government fees are paid separately to the issuing authority. We do not guarantee approval of any application.
+                CCW Concierge is a service of Quaker Ridge Holdings LLC. Private concierge service &mdash; not a government agency. Our fee is for application assistance only. Government fees are paid separately to the issuing authority. We do not guarantee approval of any application.
               </p>
             </div>
           </div>
@@ -215,38 +243,54 @@
         <span>&middot;</span>
         <a href="/refund-policy.html" class="hover:text-gray-600 transition">Refund Policy</a>
       </div>
-      <p class="text-center text-xs text-gray-400">&copy; <span id="year"></span> CCW Concierge. Private concierge service. Not a government agency.</p>
+      <p class="text-center text-xs text-gray-400">&copy; <span id="year"></span> CCW Concierge, a service of Quaker Ridge Holdings LLC. Private concierge service. Not a government agency.</p>
     </div>
   </footer>
 
   <script src="/js/main.js"></script>
   <script>
-    // Upsell toggle
+    // Upsell toggle with ROSCA-compliant consent
     const upsellCheckbox = document.getElementById('upsell-training');
     const upsellLineItem = document.getElementById('upsell-line-item');
     const monthlyNote = document.getElementById('monthly-note');
     const subtotal = document.getElementById('subtotal');
     const total = document.getElementById('total');
+    const subscriptionConsent = document.getElementById('subscription-consent');
+    const agreeSubscription = document.getElementById('agree-subscription');
+    const summarySubscriptionTerms = document.getElementById('summary-subscription-terms');
 
     upsellCheckbox.addEventListener('change', function() {
       if (this.checked) {
         upsellLineItem.classList.remove('hidden');
         upsellLineItem.classList.add('flex');
         monthlyNote.classList.remove('hidden');
+        subscriptionConsent.classList.remove('hidden');
+        summarySubscriptionTerms.classList.remove('hidden');
         subtotal.textContent = '$130.00';
         total.textContent = '$130.00';
       } else {
         upsellLineItem.classList.add('hidden');
         upsellLineItem.classList.remove('flex');
         monthlyNote.classList.add('hidden');
+        subscriptionConsent.classList.add('hidden');
+        summarySubscriptionTerms.classList.add('hidden');
+        agreeSubscription.checked = false;
         subtotal.textContent = '$95.00';
         total.textContent = '$95.00';
       }
     });
 
-    // Form submission placeholder
+    // Form submission with ROSCA validation
     document.getElementById('checkout-form').addEventListener('submit', function(e) {
       e.preventDefault();
+
+      // ROSCA: If subscription is selected, require separate express consent
+      if (upsellCheckbox.checked && !agreeSubscription.checked) {
+        alert('Please confirm your subscription authorization. You must check the subscription consent box to enroll in the Defense Training Course.');
+        agreeSubscription.focus();
+        return;
+      }
+
       alert('Payment processing will be integrated here. Connect your payment processor (Stripe, etc.) to complete this functionality.');
     });
   </script>
